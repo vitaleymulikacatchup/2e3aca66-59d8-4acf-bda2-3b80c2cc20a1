@@ -57,8 +57,8 @@ export default function Home() {
         <div className="mx-auto px-4 md:px-6">
           <SplitAbout
             bulletPoints={[
-              { title: "Innovative Solutions", description: "Cutting-edge technology to support your growth.", icon: Zap },
-              { title: "Reliable Support", description: "24/7 customer support to help you succeed.", icon: Support }
+              { title: "Innovative Solutions", description: "Cutting-edge technology to support your growth.", icon: "Zap" },
+              { title: "Reliable Support", description: "24/7 customer support to help you succeed.", icon: "Support" }
             ]}
             imageSrc={assetMap.find(a => a.id === "feature-image")?.url}
           />
@@ -111,7 +111,7 @@ export default function Home() {
         <div className="mx-auto px-4 md:px-6">
           <TestimonialCardTwo
             testimonials={[
-              { id: "1", name: "Client A", role: "CEO at Company", testimonial: "The platform has transformed our business!", icon: Star }
+              { id: "1", name: "Client A", role: "CEO at Company", testimonial: "The platform has transformed our business!", icon: "Star" }
             ]}
             title="Testimonials"
           />
