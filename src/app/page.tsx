@@ -10,8 +10,7 @@ import TeamCardTwo from '@/components/sections/team/TeamCardTwo';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
-import { Zap } from 'lucide-react';
-import { Support, Star } from 'lucide-react';
+import { Zap, Star } from 'lucide-react';
 
 const assetMap: { id: string; url: string; alt?: string }[] = [
   { id: "hero-image", url: "https://images.pexels.com/photos/34301930/pexels-photo-34301930.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "High-End Gaming PC Interior with Colorful RGB Lights" },
@@ -60,7 +59,7 @@ export default function Home() {
           <SplitAbout
             bulletPoints={[
               { title: "Innovative Solutions", description: "Cutting-edge technology to support your growth.", icon: Zap },
-              { title: "Reliable Support", description: "24/7 customer support to help you succeed.", icon: Support }
+              { title: "Reliable Support", description: "24/7 customer support to help you succeed.", icon: Zap }
             ]}
             imageSrc={assetMap.find(a => a.id === "feature-image")?.url}
           />
