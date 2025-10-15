@@ -79,7 +79,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SaaSify - Accelerate Your Business",
     description: "Discover the power of our SaaS platform and transform your business operations.",
-    url: "https://example.com", // Add the canonical URL here.
+    url: "https://example.com",
     siteName: "SaaSify",
     images: [{ url: "https://images.pexels.com/photos/34301930/pexels-photo-34301930.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "High-End Gaming PC Interior with Colorful RGB Lights" }],
     type: "website"

@@ -10,13 +10,14 @@ import TeamCardTwo from '@/components/sections/team/TeamCardTwo';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
+import { Zap, Support, Star } from 'lucide-react';
 
 const assetMap: { id: string; url: string; alt?: string }[] = [
   { id: "hero-image", url: "https://images.pexels.com/photos/34301930/pexels-photo-34301930.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "High-End Gaming PC Interior with Colorful RGB Lights" },
   { id: "feature-image", url: "https://images.pexels.com/photos/257904/pexels-photo-257904.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Close-up of a professional audio and video editing software interface with waveform displays." },
   { id: "product-image", url: "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Two women working together on software programming indoors, focusing on code." },
   { id: "team-image", url: "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Top view of a diverse team collaborating in an office setting with laptops and tablets, promoting cooperation." },
-  { id: "testimonial-image", url: "https://images.pexels.com/photos/826349/pexels-photo-82634930.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Woman enjoying remote work at a café, using a laptop and smartphone." },
+  { id: "testimonial-image", url: "https://images.pexels.com/photos/826349/pexels-photo-826349.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "Woman enjoying remote work at a café, using a laptop and smartphone." },
 ];
 
 export default function Home() {
@@ -57,8 +58,8 @@ export default function Home() {
         <div className="mx-auto px-4 md:px-6">
           <SplitAbout
             bulletPoints={[
-              { title: "Innovative Solutions", description: "Cutting-edge technology to support your growth.", icon: "Zap" },
-              { title: "Reliable Support", description: "24/7 customer support to help you succeed.", icon: "Support" }
+              { title: "Innovative Solutions", description: "Cutting-edge technology to support your growth.", icon: Zap },
+              { title: "Reliable Support", description: "24/7 customer support to help you succeed.", icon: Support }
             ]}
             imageSrc={assetMap.find(a => a.id === "feature-image")?.url}
           />
@@ -111,7 +112,7 @@ export default function Home() {
         <div className="mx-auto px-4 md:px-6">
           <TestimonialCardTwo
             testimonials={[
-              { id: "1", name: "Client A", role: "CEO at Company", testimonial: "The platform has transformed our business!", icon: "Star" }
+              { id: "1", name: "Client A", role: "CEO at Company", testimonial: "The platform has transformed our business!", icon: Star }
             ]}
             title="Testimonials"
           />
